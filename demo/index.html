@@ -6,24 +6,27 @@
     body {
       background: #fafafa;
     }
+    psu-btn.blue {
+      --psu-btn-text-color: blue;
+    }
   </style>
 </head>
 <body>
   <div id="demo"></div>
-
+  <psu-btn title="PSU Hockey" link="https://google.com/">
+  </psu-btn>
+  <psu-btn class="blue">
+  </psu-btn>
+  <psu-btn id="cool">
+  </psu-btn>
+  <psu-btn invert>
+  </psu-btn>
+  <psu-btn>
+  </psu-btn>
+  <psu-btn>
+  </psu-btn>
   <script type="module">
-    import { html, render } from 'lit';
     import '../psu-btn.js';
-
-    const title = 'Hello owc World!';
-    render(
-      html`
-        <psu-btn .title=${title}>
-          some light-dom
-        </psu-btn>
-      `,
-      document.querySelector('#demo')
-    );
   </script>
 </body>
 </html>
